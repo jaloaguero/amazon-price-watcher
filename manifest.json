@@ -1,0 +1,25 @@
+{
+
+  "manifest_version": 2,
+  "name": "Untitled Price Monitor",
+  "version": "0.0",
+
+  "description": "Will notify user when a price in a store drops below a certain price.",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["test.js"]
+    }
+	],
+	"browser_action": {
+		"browser_style": true,
+		"default_icon": {
+			"48": "test.png"
+		},
+		"default_title": "Untitled Price Monitor",
+		"default_popup": "popup.html"
+	},
+	"permissions": ["storage"]
+}
+

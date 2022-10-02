@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width">
+	</head>
+	<!--<script type="text/javascript" src="./test_script.js"></script>-->
+	<body>
+		<!--
+		<form id="form" onsubmit="return false;">
+		<label>
+			Input URL Here:
+			<input type="text" id="userInput" name="user_input">
+		</label>
+		<input type="submit" value="Submit" onclick="webURL()">
+		</form>
+		-->
+		<form action="/confirmation" method="POST">
+			Input URL Here: 
+			<input type="text" id="userInput" name="URL" required>
+			Imput Price you want to be notified at:
+			<input type="number" id="desiredPrice" name="userPrice" required>
+			<button type="submit">submit url lmao</button>
+		</form>
+	</body>
+
+</html>
